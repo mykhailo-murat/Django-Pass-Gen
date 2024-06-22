@@ -1,0 +1,23 @@
+<div class="hero">
+    <h1>Hello Home Page</h1>
+
+    <a href="{% url 'description' %}">DESCRIPTION</a>
+</div>
+
+<form action="{% url 'password' %}" class="generator-form">
+    <select name="length">
+        <option value="10">10</option>
+        <option value="15" selected="selected">15</option>
+        <option value="20">20</option>
+    </select>
+
+    <br>
+    <input type="checkbox" name="uppercase"> UPPERCASE
+    <br>
+    <input type="checkbox" name="numbers"> Numbers
+    <br>
+    <input type="checkbox" name="specials"> Special Char
+    <br>
+
+    <input type="submit" value="Generate">
+</form>
